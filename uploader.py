@@ -19,10 +19,10 @@ BOT_IMAGE_URL = "https://cutt.ly/lx0gnM9"
 
 package(
     Metadata(
-        name="Your First Bot! 🎉 🤖",
+        name="LeetCode Bot! 🎉 🤖",
         image_url=BOT_IMAGE_URL,
-        color="f1a2b3",
-        description="Thank you for creating me ❤️",
+        color= "F39F25",
+        description="Use me to study concepts related to Data Structures and Algorithms! ❤️",
         input_class=Bot,
      ),
      requirements = ["supermemo2"],
@@ -35,3 +35,4 @@ bot_uid = upload_and_deploy(
 wait_for_deployment(bot_uid)
 
 share_bot(bot_uid)
+
