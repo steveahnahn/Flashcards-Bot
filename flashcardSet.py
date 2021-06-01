@@ -20,6 +20,13 @@ flashcardSet = [
     Flashcard("What is a palindrome?", "When a string is read the same way forward and backwards. Ex.) 'racecar', 'cattac', 'palinnilap'" ),
 
     Flashcard("What are commmon edge cases related to strings?", f"1.)Empty strings\n2.)Strings with 1 or 2 characters\n3.Strings with repeating characters\n4.)Strings with only one distinct character"),
-    Flashcard()
     
+    #Graphs
+    Flashcard("Regarding Graphs - what is Bidirectional Search?", "Searching for a target node from a starting node, executing BFS from both the target and starting node to decrease time complexity from T(O(B^d)) to T(O(B^d/2))"),
+    Flashcard("Regarding Graphs - what is topological sort and how do you algorithmically solve it?", "A top sort will ensure that a node's dependency comes first before the node itself that is only applicable to DAGs. To solve it use Kahn's algorithm\n 1.)Create an array that holds the indegrees for all nodes\n 2.)Add all nodes with 0 indegrees to a Queue, adding to the top sort when processed\n 3.)Decrease the indegrees by 1 of all nodes that are affected and re-adding newly 0 indegree nodes"),
+    Flashcard("Regarding Graphs - what is a strongly connected component and how do we know if we have one?", "A SCC is when every vertex can reach another vertex through a directed path. You can use Kosaraju's algorithm to test for a SCC graph. Kosaraju's algorithm:\n 1.)Run DFS on the whole graph, if the graph is disconnected the visited set will have some vertices not included. The idea is that the last vertex visited in the DFS will be the mother vertex.\n2.)Keep track of the last vertex, reset the visited list and run DFS starting from the last vertex and if all are visited, it is the mother vertex."),
+    Flashcard("What is a minimum spanning tree and how do we generate one?", "A minimum spanning tree is an acylcic graph with V verticies and V-1 edges generated from a graph. Prims and Kahn's algorithm is sufficient to find the MST."),
+    Flashcard("What does Dijkstra's Algorithm do?", "Dijkstra's algorithm finds the shortest path for a single source and the graph must not contain any negative edges"),
+    Flashcard("Regarding Graphs - how do you detect a cycle within a graph?", "Do BFS or DFS and if any of the node's neighbors have been already seen and it's parent is not the current node, cycle detected"),
+    Flashcard("What is the solution to the well known Chess Knight Graph Problem", "1.)Create a queue and enqueue the source cell having a distance of 0\n2.)While queue, pop the node and if node is the destination, return distance otherwise mark the node and add all 8 other possible movements that knights can traverse with +1 distance while ensuring its within the board boundaries and not previously visited.\n3.)Use a directions tuple array to help you with iterating through all possible movements"),
     ]
