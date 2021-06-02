@@ -8,17 +8,21 @@ flashcardSet = [
     Flashcard("What is the max-heapify procedure?", "In order to maintain the max-heap property, we call max-heapify on array A and index i. It runs in time O(log(n)) and assumes the binary trees rooted at Left(i) and Right(i) are also max-heaps - A[i] can be smaller than it's children, so max-heapify allows A[i] to 'float down' the heap. This is not to be confused with 'heapify' that initially arranges an array to a heap costing T(O(N)) "),
     
     #Trees
-    
+    Flashcard("What is a complete binary tree?", "A binary tree in which every level except possibly the last level is completed filled and all nodes are as far left as possible"),
+    Flashcard("What is a full binary tree?", "A tree in which every node other than the leaves have two children."),
+
     #Linked Lists
     Flashcard("What are the time complexities of 'Add Node at Tail', 'Add Node at Head', 'Delete Head Node', 'Delete Non-Head Node' of a Singly Linked List", f"1.)Add Node at Tail: T(O(N))\n2.)Add Node at Head: T(O(1))\n3.)Delete Head Node T(O(1))\n4.)Delete Non-Head Node T(O(K)) where K is position of Nodew"),
-
+    Flashcard("How do you detect if a Linked List has a cycle in it?", "Use Floyd's Cycle detection algorithm where one pointer traverses the Linked List twice as fast as the other pointer and if they ever meet on the same node, a cycle exists"),
+    Flashcard("How do you reverse a singly Linked List?", "Iterate through the Linked List and save node.next to a temp variable. Then you may proceed to change the pointers where node.next = prev, prev = node, node = temp"),
+    Flashcard("What are the time complexities of 'Add/Delete Node at Tail', 'Add/Delete Node at Head', 'Delete Node given Node'", "1.)Add/Delete Node at Tail: T(O(1))\n2.)Add/Delete Node at Head: T(O(1))\n3.)Delete Node given Node: T(O(1))"),
+    
     #Arrays
 
 
     #Strings
     Flashcard("Given two strings, how do you know if one string is an anagram of the other?", "1.) Sort both strings and compare the strings 2.) Create a hashtable with a key-value pair of the character to its frequency. Use the other string to decrement the counts in the hashtable. You should be left with an empty hashtable"),
     Flashcard("What is a palindrome?", "When a string is read the same way forward and backwards. Ex.) 'racecar', 'cattac', 'palinnilap'" ),
-
     Flashcard("What are commmon edge cases related to strings?", f"1.)Empty strings\n2.)Strings with 1 or 2 characters\n3.Strings with repeating characters\n4.)Strings with only one distinct character"),
     
     #Graphs
@@ -29,4 +33,5 @@ flashcardSet = [
     Flashcard("What does Dijkstra's Algorithm do?", "Dijkstra's algorithm finds the shortest path for a single source and the graph must not contain any negative edges"),
     Flashcard("Regarding Graphs - how do you detect a cycle within a graph?", "Do BFS or DFS and if any of the node's neighbors have been already seen and it's parent is not the current node, cycle detected"),
     Flashcard("What is the solution to the well known Chess Knight Graph Problem", "1.)Create a queue and enqueue the source cell having a distance of 0\n2.)While queue, pop the node and if node is the destination, return distance otherwise mark the node and add all 8 other possible movements that knights can traverse with +1 distance while ensuring its within the board boundaries and not previously visited.\n3.)Use a directions tuple array to help you with iterating through all possible movements"),
+    # Flashcard(""),
     ]
