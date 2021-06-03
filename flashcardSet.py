@@ -10,6 +10,8 @@ flashcardSet = [
     #Trees
     Flashcard("What is a complete binary tree?", "A binary tree in which every level except possibly the last level is completed filled and all nodes are as far left as possible"),
     Flashcard("What is a full binary tree?", "A tree in which every node other than the leaves have two children."),
+    Flashcard("What is Depth First Search?", "A Tree or Graph traversal algorithm where you visit all of the neighbor's neighbors before you exhaustively search the current node's neighbors, hence going deep before going wide"),
+    Flashcard("What is Breadth First Search", "A Tree or Graph traversal algorithm where you exhaustively visit all of the current node's neighbors beefore visiting any of the neighbor's neighors, hence going wide before going deep."),
 
     #Linked Lists
     Flashcard("What are the time complexities of 'Add Node at Tail', 'Add Node at Head', 'Delete Head Node', 'Delete Non-Head Node' of a Singly Linked List", f"1.)Add Node at Tail: T(O(N))\n2.)Add Node at Head: T(O(1))\n3.)Delete Head Node T(O(1))\n4.)Delete Non-Head Node T(O(K)) where K is position of Nodew"),
@@ -18,13 +20,16 @@ flashcardSet = [
     Flashcard("What are the time complexities of 'Add/Delete Node at Tail', 'Add/Delete Node at Head', 'Delete Node given Node'", "1.)Add/Delete Node at Tail: T(O(1))\n2.)Add/Delete Node at Head: T(O(1))\n3.)Delete Node given Node: T(O(1))"),
     
     #Arrays
-
+    Flashcard("What some common pointer traversal methods to solve Array problems?", "1.)Read/Write Pointers where the read pointer traverses and swaps with the write pointer\n2.)Traversing from the start and end of the array\n3.)Double loops with two pointers"),
+    Flashcard("When can you use Binary Search and what is the time/space complexity", "Use Binary Search when your search space is monotonically increasing. The time/space is T(O(LogN)) S(O(1))"),
 
     #Strings
     Flashcard("Given two strings, how do you know if one string is an anagram of the other?", "1.) Sort both strings and compare the strings 2.) Create a hashtable with a key-value pair of the character to its frequency. Use the other string to decrement the counts in the hashtable. You should be left with an empty hashtable"),
     Flashcard("What is a palindrome?", "When a string is read the same way forward and backwards. Ex.) 'racecar', 'cattac', 'palinnilap'" ),
     Flashcard("What are commmon edge cases related to strings?", f"1.)Empty strings\n2.)Strings with 1 or 2 characters\n3.Strings with repeating characters\n4.)Strings with only one distinct character"),
-    
+    Flashcard("What are the method functions and time complexities of a Trie?", "1.)Inserting words into a Trie T(O(N*M)) where N is the longest word and M is the number of words\n2.)Search through the whole Trie with BFS or DFS T(O(N*M))\n3.)Search a prefix/word T(O(N)) where N is the length of the word"),
+    Flashcard("Why is storing counts of words in a Trie more spaced optimized than say a Hash Table?", "Trie's benefit from the fact that if a prefix of a word already exists in the Trie, it does not need to be recreated and can either extend the node's path or leverage its prefix to update its count"), 
+
     #Graphs
     Flashcard("Regarding Graphs - what is Bidirectional Search?", "Searching for a target node from a starting node, executing BFS from both the target and starting node to decrease time complexity from T(O(B^d)) to T(O(B^d/2))"),
     Flashcard("Regarding Graphs - what is topological sort and how do you algorithmically solve it?", "A top sort will ensure that a node's dependency comes first before the node itself that is only applicable to DAGs. To solve it use Kahn's algorithm\n 1.)Create an array that holds the indegrees for all nodes\n 2.)Add all nodes with 0 indegrees to a Queue, adding to the top sort when processed\n 3.)Decrease the indegrees by 1 of all nodes that are affected and re-adding newly 0 indegree nodes"),
