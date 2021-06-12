@@ -1,6 +1,6 @@
 # AI Chatbot Flashcards with Spaced Repetition
 
-- An AI Bot to help study with flashcards of Data Structures and Algorithmic computer science concepts presented through spaced repetition. Spaced repetition of flashcards are dependent on your confidence level of the topic.
+An AI Bot to help study with flashcards of Data Structures and Algorithmic computer science concepts presented through spaced repetition. Spaced repetition of flashcards are dependent on your confidence level of the topic.
 
 Topics include:
 
@@ -11,6 +11,8 @@ Topics include:
 - Graphs / Top Sort
 - Heaps / Priority Queues
 - etc.
+
+## Preview
 
 ![Sample Screenshot](/img/LeetCodeBot.jpg?raw=true "Leetcode Bot")
 
