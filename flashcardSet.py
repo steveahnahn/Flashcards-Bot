@@ -40,3 +40,4 @@ flashcardSet = [
     Flashcard("What is the solution to the well known Chess Knight Graph Problem", "1.)Create a queue and enqueue the source cell having a distance of 0\n2.)While queue, pop the node and if node is the destination, return distance otherwise mark the node and add all 8 other possible movements that knights can traverse with +1 distance while ensuring its within the board boundaries and not previously visited.\n3.)Use a directions tuple array to help you with iterating through all possible movements"),
     # Flashcard(""),
     ]
+

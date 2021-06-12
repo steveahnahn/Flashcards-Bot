@@ -1,7 +1,6 @@
 from enum import Enum, auto
 from supermemo2 import SMTwo
 from chai_py import ChaiBot, Update
-from flashcardSet import flashcardSet
 
 class Flashcard:
     def __init__(self, question, answer):
@@ -41,6 +40,7 @@ class MessageType(Enum):
 
 class Bot(ChaiBot):
     def setup(self):
+        from flashcardSet import flashcardSet
         self.logger.info("Setting up...")
         self.flashcards = flashcardSet
         self.previous_messagetype = None
