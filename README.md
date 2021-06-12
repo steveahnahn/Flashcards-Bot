@@ -11,8 +11,8 @@ Topics include:
 - Heaps / Priority Queues
 - etc.
 
+![Sample Screenshot](https://github.com/steveahnahn/Flashcards-Bot/tree/master/img/LeetCodeBot.j)
 
-
-##Requirements:
+## Requirements:
 * [Supermemo2]
 * [ChaiPy on PyPi]
