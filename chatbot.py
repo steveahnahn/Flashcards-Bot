@@ -48,7 +48,7 @@ class Bot(ChaiBot):
     async def on_message(self, update: Update) -> str:
         if self.previous_messagetype is MessageType.QUESTION:
             self.previous_messagetype = MessageType.QUALITY
-            return f"Answer: {self.flashcards[0].answer}\n\nHow easy was this? (1-5)"
+            return f"Answer: {self.flashcards[0].answer}\n\nHow easy was this? (1 - 5)"
         if self.previous_messagetype is MessageType.QUALITY:
             self.flashcards[0].update_review(update.latest_message.text)
             print(self.flashcards[0].review)

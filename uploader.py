@@ -15,11 +15,11 @@ if DEVELOPER_KEY is None or DEVELOPER_UID is None:
     raise RuntimeError("Please fetch your UID and KEY from the bottom of the Chai Developer Platform. https://chai.ml/dev")
 
 set_auth(DEVELOPER_UID, DEVELOPER_KEY)
-BOT_IMAGE_URL = "https://cutt.ly/lx0gnM9"
+BOT_IMAGE_URL = "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80"
 
 package(
     Metadata(
-        name="LeetCode Bot! 🎉 🤖",
+        name="LeetCode Bot! 🤖",
         image_url=BOT_IMAGE_URL,
         color= "F39F25",
         description="Use me to study concepts related to Data Structures and Algorithms! ❤️",
