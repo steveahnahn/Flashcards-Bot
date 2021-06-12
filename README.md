@@ -12,7 +12,7 @@ Topics include:
 - Heaps / Priority Queues
 - etc.
 
-![Sample Screenshot](./img/LeetCodeBot.jpg?raw=true "Leetcode Bot"")
+![Sample Screenshot](/img/LeetCodeBot.jpg?raw=true "Leetcode Bot")
 
 <!-- ![Sample Screenshot](https://github.com/steveahnahn/Flashcards-Bot/tree/master/img/LeetCodeBot.jpg?raw=true) -->
 
